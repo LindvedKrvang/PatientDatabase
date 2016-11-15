@@ -15,6 +15,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import patientdatabase.bll.bllManager;
 
 /**
  *
@@ -44,6 +45,8 @@ public class MainViewController implements Initializable
         columName.setCellValueFactory(new PropertyValueFactory<>("name"));
         columEmail.setCellValueFactory(new PropertyValueFactory<>("email"));
         tblPatients.setItems(patientList);
+        bllManager bllM = bllManager.getInstance();
+        patientList.addAll(bllM.getAllPatients());
     }
     
 }
