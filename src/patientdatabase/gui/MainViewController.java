@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package patientdatabase;
+package patientdatabase.gui;
 
+import patientdatabase.be.Patient;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
