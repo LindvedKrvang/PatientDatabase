@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="747.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="patientdatabase.gui.controller.MainViewController">
+   <children>
+      <Label layoutX="14.0" layoutY="35.0" text="Patients" />
+      <TableView fx:id="tblPatients" layoutY="69.0" onMousePressed="#mousePressedOnTableView" prefHeight="677.0" prefWidth="764.0">
+        <columns>
+          <TableColumn fx:id="columName" prefWidth="382.0" text="Name" />
+          <TableColumn fx:id="columEmail" prefWidth="307.0" text="Email" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

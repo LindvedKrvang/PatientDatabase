@@ -5,10 +5,10 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="747.0" prefWidth="764.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.60" fx:controller="patientdatabase.gui.MainViewController">
+<AnchorPane id="AnchorPane" prefHeight="747.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="patientdatabase.gui.MainViewController">
    <children>
       <Label layoutX="40.0" layoutY="48.0" text="Patients" />
-      <TableView fx:id="tblPatients" layoutX="40.0" layoutY="69.0" prefHeight="643.0" prefWidth="690.0">
+      <TableView fx:id="tblPatients" layoutY="75.0" prefHeight="672.0" prefWidth="764.0">
         <columns>
           <TableColumn fx:id="columName" prefWidth="334.0" text="Name" />
           <TableColumn fx:id="columEmail" prefWidth="355.0" text="Email" />
